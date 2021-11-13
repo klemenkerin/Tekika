@@ -2,19 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Tekika, a collection of 9,999 unique avatars."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,20 +18,469 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tekika</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    
+   <div class="fl-page" id="butter">
+        <section id="header-top">
+            <header>
+                <div class="main-nav">
+                    <ul>
+                        <div class="menu-1">
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="#mint">MINT</a></li>
+                        </div>
+                        <div class="menu-logo">
+                            <li><a href="/" class="logo" ><img src="images/logo.svg" alt=""></a></li>
+                        </div>
+                        <div class="menu-2">
+                            <li><a href="#roadmap">ROADMAP</a></li>
+                            <li><a href="#team">TEAM</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </header>
+            <div class="mobile-menu">
+                <div class="logo-mobile">
+                    <img src="images/logo.svg">
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <img src="images/logo.svg">
+                        <li><a href="/" onclick="closeNav()">HOME</a></li>
+                        <li><a href="#mint" onclick="closeNav()">MINT</a></li>
+                        <li><a href="#roadmap" onclick="closeNav()">ROADMAP</a></li>
+                        <li><a href="#team" onclick="closeNav()">TEAM</a></li>
+                        <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+                    </div>
+                </div>
+                <span class="open_nav" onclick="openNav()">
+                    <img src="images/bars1.svg">
+                </span>
+            </div>
+        </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <section id="tekika_row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 my-auto" data-aos="fade-right" data-aos-delay="200">
+                        <div class="tekika-col">
+                            <h2><span>Tekika</span></h2>
+                            <h4><span>a collection of 9,999 unique avatars.</span></h4>
+                            <p class="p-20">The Tekikas are a collection of 9,999 generative artworks with hundreds of elements inspired by the Japan Anime ideologies.
+                            </p>
+                            <p class="p-20">
+                                Each artwork is original, with its own colour theme 
+                                and oeuvre. The objective was to make each
+                                Tekika unique in order to provide a distinctive visual.</p>
+                            <a href="https://discord.com/invite/tekika" class="btn-pink" target="_blank"><span>Join Our Discord</span></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 my-auto" data-aos="fade-right" data-aos-delay="400">
+                        <!--
+                        <div class="tekika-img">
+                            <img src="images/5-anim.png" alt="">
+                        </div>
+                        -->
+                        <div class="tekika-hexagons">
+                            <div class="tekika-hexagons-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <section id="tekika_slider" data-aos="fade-in" data-aos-delay="200">
+            <div class="tekika-slides owl-carousel owl-theme">
+                <div class="tekika-slider-img">
+                    <img src="images/img-slider.png" alt="">
+                </div>
+                <div class="tekika-slider-img">
+                    <img src="images/img2-slider.png" alt="">
+                </div>
+                <div class="tekika-slider-img">
+                    <img src="images/img3-slider.png" alt="">
+                </div>
+                <div class="tekika-slider-img">
+                    <img src="images/img4-slider.png" alt="">
+                </div>
+                <div class="tekika-slider-img">
+                    <img src="images/img5-slider.png" alt="">
+                </div>
+                <div class="tekika-slider-img">
+                    <img src="images/img6-slider.png" alt="">
+                </div>
+                <div class="tekika-slider-img">
+                    <img src="images/img7-slider.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="mint">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5" data-aos="fade-right" data-aos-delay="200">
+                        <div class="min-col">
+                            <div class="min-tol-content">
+                                <h2><span>Mint</span></h2>
+                                <p>Mint a Tekika</p>
+                            </div>
+                            <img src="images/mint-img.png">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7" data-aos="fade-right" data-aos-delay="400">
+                        <div class="minting-rules-col">
+                            <div class="minting-rules-child">
+                                <h3><span>Minting Rules</span></h3>
+                                <div class="minting-rules-list">
+                                    <span>.01</span>
+                                    <p class="p-18">9,999 unique 1 of 1 NFTs will be created at launch.</p>
+                                </div>
+                                <div class="minting-rules-list">
+                                    <span>.02</span>
+                                    <p class="p-18">Max mint per wallet is 10 NFTs (subject to change).</p>
+                                </div>
+                                <div class="minting-rules-list">
+                                    <span>.03</span>
+                                    <p class="p-18">Public sale date is to be announced.</p>
+                                </div>
+                            </div>
+                            <div class="minting-rules-calc">
+                                <div class="plus-min">
+                                        <button onclick="down()"><img src="images/min.png" alt=""></button>
+                                        <p id="result">1</p>
+                                        <button onclick="up()"><img src="images/plus.png" alt=""></button>
+                                </div>
+                                <div class="max-btn">
+                                    <a class="max-btn-class" id="max-number" href="javascript:void(0)"><span>max</span></a>
+                                </div>
+                            </div>
+                            <span class="price">Price: <span class="real-price">1.5SOL</span></span>
+                            <a href="https://forms.gle/E3k6BSvnbSTXhb9X8" class="join-btn" target="_blank"><span>Join Whitelist</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <div class="container">
+                <div class="roadmap-content">
+                    <h2 data-aos="fade-right" data-aos-delay="200"><span>Roadmap</span></h2>
+                    <p class="p-22 text-center" data-aos="fade-right" data-aos-delay="400">This roadmap highlights our aims, objectives, proposals and sacrifices intended to elucidate our personal envisage.</p>
+                </div>
+                <div class="roadmap-parent-col">
+                    <div class="roadmap-left" data-aos="fade-right" data-aos-delay="200">
+                        <div class="roadmap-first-col">
+                            <div class="number-title">
+                                <span>.01</span>
+                                <h3>Launch Roadmap</h3>
+                            </div>
+                            <p class="p-14">We envision our project to be the greatest on the Solana ecosystem; to achieve this we strive to ensure we put quality foremost. We aspirate to deliver a pre-eminent launch from having marketplace listings pre-announced & growing an organic and hooked community to deliver an unbeatable experience. Months of going back and forth to achieve the epitome of perfection have been poured into our art to prioritise and corroborate the longevity of our project.</p>
+                            <span class="line-1"></span>
+                            <span class="line-2"></span>
+                            <span class="square"></span>
+                        </div>
+                        <div class="roadmap-first-col roadmap-2" data-aos="fade-right" data-aos-delay="200">
+                            <div class="number-title">
+                                <span>.02</span>
+                                <h3>Foreeable Future</h3>
+                            </div>
+                            <p class="p-14">Us, Tekikas, observe the long-term, we are deeply passionate about indulging ourselves in this diverse space. We excel at innovation and have many plans in mind to expand and grow our Tekika ecosystem from real-life congregations for our holders, to the disclosure of future Tekika collections. We want to build our ecosystem with you, and to have your best interests in mind therefore we will host community polls & votes to decide what we should be constructing next to develop our exciting ecosystem.  We wish to create a social, ecological and global impact and build something extraordinary with everyone. Everyone has the right to evaluate how we should grow the Tekika project, hence we invite and encourage you to connect with us to voice your opinion. We look forward to seeing what happens in the future! Love from the team at Tekika!</p>
+                            <span class="line-2"></span>
+                            <span class="square"></span>
+                        </div>
+                    </div>
+                    <div class="roadmap-right">
+                        <!-- <div id="animation_1"></div> -->
+                        <lottie-player id="firstLottie" src="https://assets4.lottiefiles.com/packages/lf20_m52cqilo.json"></lottie-player>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap_2">
+            <div class="container">
+                <div class="roadmap-parent-col-2">
+                    <div class="roadmap-2-left">
+                        <h3 data-aos="fade-right" data-aos-delay="200">Q4</h3>
+                        <div class="roadmap-2-list">
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">Towards the middle of Q4, we plan to release strategical partnerships with distinguished personalities, who are apart of established, tier-one Esport organisations. We plan announce our upcoming Action RPG Play-2-Earn game; at Tekika we believe the metaverse is the future and augmented and virtual reality experiences will expand as a result, hence having partnerships with prominent, world class organisations will allow our P2E interactive to gain recognition against our competitors.</p>
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">Announcement  of our short format anime series that will serve as an advertisement to promote our Tekika brand and our NFT collection.</p>
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">Collaborations with established, blue-chip Solana NFT projects to establish a positive sentiment revolving the Tekika brand. </p>
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">Listing and features on the biggest Solana NFT marketplaces.</p>
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">Disclosure of our rarity gallery for each individual asset as well as integrated onto our website.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-2-left roadmap-2-left-2" data-aos="fade-right" data-aos-delay="200">
+                        <h3 data-aos="fade-right" data-aos-delay="200">Q1 - Q4 and onwards</h3>
+                        <div class="roadmap-2-list">
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">Integration of our Tekika NFTs onto the upcoming Facebook Metaverse. This will be a huge monetisation push for our brand Tekika, allowing as many of our users as possible to be able to interact with their characters in a virtual reality environment.
+                                </p>
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">Release of the first public playtest of our P2E Action RPG experience.</p>
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">White label NFT gaming platform for Esport agencies and gaming personalities.</p>
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">Establishment of the Tekika DAO for future decisions, council members will be elected based on their  community eminence and activity.</p>
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">Release of the Tekika token onto the Solana chain, with liquidity fuelled from the collection of Tekika NFT royalties. This will be airdropped to all holders.</p>
+                            <p class="p-16" data-aos="fade-right" data-aos-delay="200">All royalties will be held in a community wallet controlled entirely by the Tekika DAO after liquidity for our token has been allocated. </p>
+                        </div>
+                    </div>
+                    <div class="roadmap-2-right">
+                       <!--  <div id="animation_2"></div> -->
+                       <lottie-player id="secondLottie" src="https://assets7.lottiefiles.com/packages/lf20_yzmiwvlz.json"></lottie-player>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="container">
+                <div class="who-we-are-first">
+                    <div class="who-we-are-content">
+                        <h2 data-aos="fade-right" data-aos-delay="200"><span>Who are we?</span></h2>
+                        <p data-aos="fade-right" data-aos-delay="200">Tekika Team</p>
+                    </div>
+                    <div class="who-we-are-text" data-aos="fade-right" data-aos-delay="400">
+                        <p class="p-18">Hey! Fusionitic and Granachny are two determined and passionate blockchain enthusiasts. We have proficiency in a multitude of design programs and the ability to work and collaboratively lead teams as well as being innovative, technical result driven leaders and have decided to use our expertise in building the biggest project on the Solana Ecosystem.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6" data-aos="fade-right" data-aos-delay="200">
+                        <div class="who-we-are-col">
+                            <img src="images/Combo1.png" alt="">
+                            <h3>Fusionitic</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" data-aos="fade-right" data-aos-delay="400">
+                        <div class="who-we-are-col who-we-are-col-2">
+                            <img src="images/Combo24.png" alt="">
+                            <h3>Granachny</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="container">
+                <h2 data-aos="fade-right" data-aos-delay="200"><span>Frequently Asked Questions</span></h2>
+                <div class="row">
+                    <div class="faq-col">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item" >
+                              <span class="accordion-header" id="headingOne">
+                                <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+                                  What is a Tekika?
+                                </button>
+                            </span>
+                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <p class="p-18">A unique character inspired by the Japan Anime ideologies living on the Solana blockchain.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  When is the minting date?
+                                </button>
+                            </span>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <p class="p-18">Public sale date is to be announced. Presale date will be announced on our Discord server.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  What is the minting price?
+                                </button>
+                            </span>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <p class="p-18">The minting price is 1.5SOL, however this is subject to change.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  Will there be secondary markets?
+                                </button>
+                            </span>
+                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <p class="p-18">Yes we are in contact with major marketplaces on the Solana chain to be listed right after our mint.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  Will there be secondary sale royalties?
+
+                                </button>
+                            </span>
+                              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <p class="p-18">Royalties will be 2.5% for the Tekika collection.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  Will there be a presale?
+                                </button>
+                            </span>
+                              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <p class="p-18">Yes, we desire to ensure that active community members are rewarded.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community_row">
+            <div class="container">
+                <div class="join-our-col" data-aos="fade-right" data-aos-delay="200">
+                    <div class="join-our-col-child">
+                        <h2>Join the community</h2>
+                        <p class="p-22">Have any queries about the project? Join to get the news as soon as possible and follow our latest announcements.</p>
+                        <a href="https://discord.com/invite/tekika" target="_blank"><span>Join our Discord</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="container">
+                <div class="footer-col-parent" data-aos="fade-in" data-aos-delay="200">
+                    <div class="logo-col">
+                        <a href="/"><img src="images/logo.svg" alt=""></a>
+                        <img src="images/tekika-footer.svg" alt="">
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#header-top">Home</a>
+                        <a href="#mint">Mint</a>
+                        <a href="#roadmap">Roadmap</a>
+                        <a href="#team">Team</a>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#">
+                        <img src="images/iconmonstr-twitter-1.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/Discord-Logo-Black.svg" alt="">
+                    </a>
+                </div>
+                <div class="copyright-div">
+                    <p>© 2021 Tekika. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </div><!-- end fl-page -->
+    
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0-rc2/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <!--<script src="js/butter.js"></script>-->
+    <script src="js/script.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            setTimeout(function(){
+                
+                if($(window).width() < 767)
+                {
+                    AOS.init({
+                        duration: 800,
+                        offset: 100
+                    });
+                } else {
+                    AOS.init({
+                        duration: 800,
+                        offset: 200
+                    });
+                }
+                
+            }, 400);
+        });
+    </script>
+
+    <script>
+        
+            
+        
+	
+		$(document).ready(function(){
+
+            
+
+            $('body').addClass('loaded');
+
+			$('.faq-col .accordion-button').click(function(){
+				var check = $(this).closest('.accordion-item').hasClass('active');
+				$('.accordion-item').removeClass('active');
+				if ( check === false) {
+					$(this).closest('.accordion-item').addClass('active');
+				}
+			});
+		});
+	
+        $('.tekika-slides').owlCarousel({
+            loop:true,
+            margin:82,
+            nav:false,
+            dots:false,
+            items:3,
+            autoplay: true,
+            stagePadding: 265,
+            responsive : {
+                0:{
+                    items: 1,
+                    margin: 50,
+                    stagePadding: 60
+                },
+                768: {
+                    margin: 30,
+                    stagePadding: 100,
+                },
+                1025: {
+                    margin: 32,
+                    stagePadding: 150, 
+                },
+                1200: {
+                    margin: 80,
+                    stagePadding: 200,
+                }
+            }
+        })
+    </script>
   </body>
 </html>
