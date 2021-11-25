@@ -30,7 +30,7 @@ body{
     background: #F8F8FF;
 }
 body:after{
-    position:absolute; 
+    position:absolute;
 	z-index:-1;
     content: url('../images/faq-minus.png');
 }
@@ -202,7 +202,7 @@ header{
 .main-nav ul li a{
     display: block;
     color: #fff;
-    margin-right:50px; 
+    margin-right:50px;
     letter-spacing: 1.5px;
     position: relative;
     transition: all .2s ease !important;
@@ -254,7 +254,7 @@ header{
     text-align: right;
 }
 .tekika-hexagons-inner {
-    background: url(../images/hexagons-min.png);
+    background: url(../images/hexa.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -263,7 +263,7 @@ header{
     overflow: hidden;
     position: relative;
     width: 636px;
-    height: 1828px;
+    height: 4855px;
     image-rendering: -webkit-optimize-contrast;
     margin-left: -15px;
 }
@@ -458,7 +458,7 @@ header{
 }
 .join-btn:hover span,
 .max-btn a:hover span{
-    color: #E44AA5; 
+    color: #E44AA5;
 }
 .join-btn::before,
 .max-btn a::before{
@@ -481,7 +481,7 @@ header{
     color: #E44AA5;
 }
 /* .btn-pink:hover{
-/* .join-btn:hover{ 
+/* .join-btn:hover{
     background-position: top center;
     color: #fff;
 } */
@@ -1000,7 +1000,7 @@ header{
 @media(max-width:1500px){
     .tekika-hexagons-inner {
         width: 522px;
-        height: 1500px;
+        height: 3893px;
     }
 }
 
@@ -1127,7 +1127,7 @@ header{
     }
     .tekika-hexagons-inner {
         width: 462px;
-        height: 1325px;
+        height: 3525px;
     }
     .who-we-are-first{
         margin-bottom: 50px;
@@ -1248,7 +1248,7 @@ header{
 @media(max-width: 1024px){
     .tekika-hexagons-inner {
         width: 350px;
-        height: 1007px;
+        height: 2670px;
     }
     .accordion-item{
         padding-left: 25px;
