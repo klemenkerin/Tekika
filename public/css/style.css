@@ -308,7 +308,6 @@ header{
 }
 .tekika-col p:first-of-type{
     max-width: 550px;
-    margin-bottom: 39px;
     width: 100%;
 }
 .tekika-col p:last-of-type{
@@ -327,7 +326,6 @@ header{
     background-position: bottom center;
     background-size: auto 140%;
     color: #fff;
-    margin-top: 46px;
     transition: all .2s ease;
 }
 /* start slider */
