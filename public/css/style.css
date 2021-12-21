@@ -663,7 +663,7 @@ header{
 .roadmap-2-left::before{
     content: '';
     position: absolute;
-    background: url(../images/roadmap-number.svg);
+    background: url(../images/roadmap-number-2.svg);
     width: 85px;
     height: 85px;
     left: -124px;
