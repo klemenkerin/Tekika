@@ -213,7 +213,7 @@ function closeNav(){
 
 let score = 1;
 function up(){
-  if(score < 20 ){
+  if(score < 3 ){
     score ++;
   }
   document.getElementById("result").innerHTML = score;
@@ -230,7 +230,7 @@ const maxDiv = document.getElementById('max-number');
 
 maxDiv.addEventListener('click',function(){
     score = 10;
-    document.getElementById("result").innerHTML = 20;
+    document.getElementById("result").innerHTML = 3;
 
 });
 
