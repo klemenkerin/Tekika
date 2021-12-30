@@ -229,7 +229,7 @@ function down(){
 const maxDiv = document.getElementById('max-number');
 
 maxDiv.addEventListener('click',function(){
-    score = 10;
+    score = 3;
     document.getElementById("result").innerHTML = 3;
 
 });
